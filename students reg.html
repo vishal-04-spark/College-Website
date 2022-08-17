@@ -1,0 +1,56 @@
+<?php require_once 'config.php';?>
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+    body {
+        background-image: url(bg);
+        background-size: cover;
+    }
+</style>
+    <title>Register
+    </title>
+    <link rel="icon" href="picc" type="image/x-icon"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        pre{
+            color: rgb(0, 0, 0);
+            font-size: x-large;
+        }
+        iframe{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.mtec.ac.in" target="blank">
+    <img src="picc" alt="edu" style="float: right; width: 40px; height: 40px;"></a>
+    <div align="center">
+   <u><h1 style="color: red;">REGISTRATION FORM</h1></u>
+</div>
+
+    <form method="post" action="file.php">
+        <fieldset>
+            <legend><b>ENTER YOUR DETAILS</b></legend>  
+            <img src="atal" style="width: 15cm; height: 15cm; float: right;">
+       <pre><b>Student Name  :</b><input type="text" name="box1" size="20" required value=""></pre>
+       <pre><b>DOB           :</b><input type="date" name="box2"size="10" required value=""></pre>
+       <pre><b>Address       :</b><input type="text" name="box3" size="50"  value=""></pre>
+       <pre><b>Mob No        :</b><input type="tel" name="box4" size="10" required maxlength="10" value=""></pre>
+       <pre><b>Email ID      :</b><input type="email" name="box5" size="25" required value="" placeholder="example123@gmail.com"></pre>
+       <pre><b>Password      :</b><input type="password" name="box6" size="10" required value="" placeholder="**********"></pre>
+       <pre><b>Select Courses</b>
+       <div>
+        <input type="radio" name="Courses"value="0">CSE
+        <input type="radio" name="Courses"value="1">ECE
+        <input type="radio" name="Courses"value="2">MECH
+        <input type="radio" name="Courses"value="3">CIVIL
+        <input type="radio" name="Courses"value="4">EEE
+       </div>
+    <input type="submit" value="Submit"> <input type="reset" value="Clear">
+    </fieldset>
+    </form>
+    
+</body>
+</html>
